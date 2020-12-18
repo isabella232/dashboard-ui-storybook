@@ -1,0 +1,27 @@
+.error-container {
+  background-color: $color-bg;
+
+  .error-logo {
+    i {
+      color: $sidebar-hover-color;
+
+      &.error-code:after {
+        color: $sidebar-color;
+      }
+    }
+  }
+
+  .error-content {
+    background-color: $sidebar-color;
+    p {
+      color: $font-color-beta-light;
+    }
+  }
+
+  .hide-on-beta {
+    display: none;
+  }
+  .only-beta {
+    display: inline-block;
+  }
+}

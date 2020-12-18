@@ -1,0 +1,14 @@
+.account-settings,
+.san-settings {
+  .tile {
+    &:hover .social-icon .mono {
+      opacity: 0;
+    }
+
+    .actions-list-section {
+      margin-top: 20px;
+    }
+  }
+}
+
+

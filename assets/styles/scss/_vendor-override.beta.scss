@@ -1,0 +1,235 @@
+$pickdate-header-color: $font-color-light;
+$pickdate-active-color: white;
+$pickdate-enabled-color: white;
+$pickdate-disabled-color: #7b86a5;
+
+.pickadate-modal {
+  background-color: $btn-color-bg;
+  border: 0;
+  margin: 0;
+}
+
+.form-row {
+  datepicker-wrapper {
+    position: relative;
+    display: block;
+  }
+}
+
+.pickadate-modal {
+  padding: 0;
+}
+
+.pickadate-header {
+  background: #5d6a8c;
+}
+
+.pickadate-centered-heading {
+  color: white;
+  font-size: 14px;
+  line-height: 34px;
+  margin: 0;
+}
+
+.pickadate-controls {
+  .pickadate-prev,
+  .pickadate-next {
+    font-size: 14px;
+    height: 34px;
+    width: 34px;
+    position: relative;
+
+    &, &:hover, &:active, &:focus {
+      color: rgba(white, 0);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        color: white;
+      }
+    }
+  }
+
+  .pickadate-prev {
+    float: left;
+
+    &::before {
+      left: 10px;
+    }
+  }
+
+  .pickadate-next {
+    float: right;
+
+    &::after {
+      right: 10px;
+    }
+  }
+
+  .pickadate-prev::before,
+  .pickadate-next::after {
+    color: #8d97b3;
+    padding: 0;
+    font-size: 10px;
+    line-height: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+  }
+}
+
+.pickadate-main {
+  padding-bottom: 5px;
+
+  .pickadate-head {
+    margin: 6px 0;
+    font-weight: 600;
+  }
+}
+
+.pickadate-cell {
+  li {
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+    height: 26px;
+    border-radius: 0;
+    cursor: default;
+    position: relative;
+    font-size: 13px;
+
+    &:before {
+      content: '';
+      background: transparent;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      margin: -13px 0 0 -12px;
+    }
+    &:hover {
+      color: #fff !important;
+      &.pickadate-disabled {
+        color: #fff !important;
+      }
+      &.pickadate-active {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .pickadate-head,
+  li:hover.pickadate-head {
+    color: $pickdate-header-color;
+
+    &:before {
+      background: transparent;
+    }
+  }
+
+  .pickadate-today {
+    background: none;
+    color: white;
+
+    &:before {
+      background: rgba(#5e6b8b, .5);
+    }
+  }
+
+  .pickadate-enabled {
+    background: none;
+    font-weight: 400;
+    font-size: 13px;
+    color: white !important;
+  }
+
+  .pickadate-disabled,
+  li:hover.pickadate-disabled {
+    background: none;
+    color: #5e6b8b;
+    font-weight: 300;
+
+    &:before {
+      background: transparent;
+    }
+  }
+
+  .pickadate-active,
+  li:hover.pickadate-active {
+    color: #5e6b8b !important;
+    font-weight: 400;
+
+    &:before {
+      background: white !important;
+    }
+  }
+
+  li:hover {
+    color: white;
+
+    &:before {
+      background: #5e6b8b;
+    }
+  }
+
+  /*
+  .pickadate-enabled {
+    color: $pickdate-enabled-color;
+    font-weight: 400;
+
+    &:before {
+      content: '';
+      background: transparent;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      margin: -13px 0 0 -12px;
+    }
+  }
+
+  .pickadate-active {
+    color: #5e6b8b;
+    border-radius: 0;
+    background: none;
+
+    &:before {
+      background: white;
+    }
+  }
+
+  .pickadate-today {
+    &:before {
+      background: #5e6b8b;
+    }
+  }
+
+  li:hover {
+    &.pickadate-active {
+      color: white;
+      &:before {
+        background: #5e6b8b;
+      }
+    }
+
+    &.pickadate-disabled {
+      color: $pickdate-disabled-color;
+    }
+
+    &.pickadate-head {
+      color: $pickdate-header-color;
+    }
+
+    &.pickadate-disabled {
+      color: $pickdate-disabled-color;
+    }
+  }
+  */
+}

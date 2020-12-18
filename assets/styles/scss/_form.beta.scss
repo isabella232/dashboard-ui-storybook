@@ -1,0 +1,175 @@
+.iconic {
+  border: 0;
+  min-width: 26px;
+  margin: 0 18px 0 0;
+  padding: 0 !important;
+
+  &:last-child {
+    border: 0;
+    margin-right: 0;
+  }
+
+  i, .iconic-label {
+    line-height: 30px;
+  }
+
+  i {
+    width: 26px;
+    @include transition(color .2s ease)
+  }
+
+  .iconic-label {
+    margin: 0 0 0 32px;
+    padding-right: 0;
+  }
+
+  &:hover i {
+    color: $btn-color-hover;
+  }
+
+  &.iconic-tab {
+    min-width: 50px;
+    margin-right: 0;
+
+    i, .iconic-label {
+      line-height: 40px;
+    }
+
+    i {
+      width: 50px;
+      border: 0;
+    }
+
+    .iconic-label {
+      margin-left: 44px;
+      padding-right: 15px;
+    }
+
+    &.active {
+      border: none;
+      background-color: $sidebar-highlight-color;
+
+      &:first-child {
+        border-left: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    .icon-windows-phone {
+      top: -2px;
+    }
+
+    .icon-windows {
+      top: -1px;
+      font-size: 22px;
+    }
+  }
+
+  & [class*=icon-] {
+    font-size: 24px;
+  }
+
+  .icon-play-store,
+  .icon-amazon-store {
+    font-size: 22px;
+  }
+}
+
+.selection-group {
+  &-tabs {
+    border-bottom: none;
+  }
+
+  &-container {
+    padding: 20px;
+    margin: 0 -20px;
+    background-color: $sidebar-highlight-color;
+
+    .label-error-txt {
+      background-color: $sidebar-highlight-color;
+    }
+  }
+
+  i, span {
+    color: $btn-color-bg;
+  }
+
+  input[type=checkbox],
+  input[type=radio] {
+    &:disabled + i, &:disabled + i + span {
+      color: $sidebar-tab-inactive;
+      cursor: not-allowed;
+    }
+
+    &:focus + i, &:focus + i + span {
+      color: white;
+    }
+  }
+
+  .error, .error.active {
+    i, span {
+      color: $font-warning;
+    }
+    input[type=checkbox],
+    input[type=radio] {
+      &:disabled + i, &:disabled + i + span,
+      &:focus + i, &:focus + i + span {
+        color: $font-warning;
+      }
+    }
+  }
+
+  .active {
+    i {
+      color: white;
+    }
+    span {
+      color: white;
+    }
+    input[type=checkbox],
+    input[type=radio] {
+      &:disabled + i, &:disabled + i + span {
+        color: white;
+      }
+    }
+  }
+
+  &.text-selection-group {
+
+    &-tabs {
+      @include box-shadow(none);
+      padding-left: 0;
+
+      label {
+        border: none;
+        padding: 10px 0;
+
+        span {
+          border-right: none;
+          padding: 0 14px;
+        }
+
+        &.active {
+          background-color: $sidebar-highlight-color;
+        }
+      }
+    }
+  }
+}
+
+.form-credit-card-icon {
+  .braintree-hosted-fields-focused + .icon {
+    color: $sidebar-color;
+  }
+  .icon {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3px;
+    height: 30px;
+    color: $font-color-beta-light
+  }
+}

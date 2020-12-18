@@ -1,0 +1,87 @@
+$size: 42px;
+
+.vertical-breadcrumbs {
+
+  ul .breadcrumb {
+    @include flex(0 0 $size);
+    width: $size;
+    background-color: $sidebar-color;
+    @include transition(background-color 0.2s linear);
+    @include icon(triangle-top);
+
+    &:before {
+      height: 60px;
+      line-height: 60px;
+      width: $size;
+      font-size: 0.5em;
+      background-color: transparent;
+      color: $btn-color-bg;
+      @include transition(transform 0.1s ease-in-out);
+      @include transform(rotate(-90deg));
+    }
+
+    &:hover {
+      background-color: $sidebar-hover-color;
+
+      &:before {
+        height: 60px;
+        line-height: 60px;
+        width: $size;
+        color: $font-color-light;
+        background-color: transparent;
+        @include transform(rotate(-180deg));
+      }
+      a {
+        color: $font-color-light;
+      }
+    }
+
+    a {
+      text-transform: none;
+      font-size: 1em;
+      box-shadow: none;
+      border-right: 2px solid $btn-color-bg;
+
+      .text {
+        line-height: $size;
+        margin-top: 58px;
+      }
+    }
+  }
+
+  .platforms {
+    @extend .flex-box-column;
+    margin-bottom: 16px;
+
+    li {
+      display: block;
+      border-right: none;
+      width: 100%;
+
+      & [class*=icon-],
+      & [class^=icon-] {
+        font-size: 21px;
+      }
+
+      .icon-windows-phone {
+        font-size: 22px;
+      }
+
+      .icon-windows {
+        font-size: 19px;
+      }
+
+      &.active {
+        color: $btn-color-bg;
+      }
+    }
+  }
+
+  .app-summary {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: $size;
+    padding: 16px 0;
+  }
+}

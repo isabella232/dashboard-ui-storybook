@@ -1,0 +1,84 @@
+/* angular-pickadate override
+================================================== */
+.pickadate {
+  font-family: $font-family-maven;
+  font-size: 1em;
+}
+
+.pickadate-modal {
+  background-color: #fff;
+  position: fixed;
+  margin-top: -1px;
+  border-color: $color-border;
+  @include border-radius(0);
+}
+
+.pickadate-controls {
+  text-align: left;
+  a {
+    padding: 0 6px;
+  }
+  .pickadate-prev,
+  .pickadate-next {
+    color: #fff;
+    &:active, &:visited, &:focus {
+      color: #fff;
+    }
+
+    &:before,
+    &:after {
+      color: $font-color-light;
+      @include icon-styles;
+    }
+  }
+  .pickadate-prev {
+    &:before {
+      content: icon-char(arrow-left);
+    }
+  }
+  .pickadate-next {
+    &:after {
+      content: icon-char(arrow-right);
+    }
+  }
+}
+
+.pickadate-cell {
+
+  li {
+    border: none !important;
+    padding: 5px 0;
+    margin: 2px 0;
+    line-height: 1;
+
+    &:hover {
+      color: $color-main !important;
+      &.pickadate-disabled {
+        color: #DCDCDC !important;
+      }
+      &.pickadate-active {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .pickadate-active {
+    color: #fff !important;
+    background-color: $color-main;
+    @include border-radius(3px);
+  }
+
+  .pickadate-head {
+    background-color: transparent !important;
+    border: none !important;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: $width-tablet) {
+  .pickadate-modal {
+    width: 260px;
+  }
+}

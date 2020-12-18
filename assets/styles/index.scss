@@ -1,0 +1,12 @@
+@import '~@adjust/adjust-style/scss/themes/adjust-light/adjust-light';
+
+@import './scss/variables';
+@import './scss/icons';
+@import './scss/breadcrumbs';
+@import './scss/common';
+@import './scss/form';
+@import './scss/vendor-override';
+@import './scss/error-page';
+@import './scss/tooltip';
+
+@import '../../app/**/!(*.beta).scss';

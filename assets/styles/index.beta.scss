@@ -1,0 +1,20 @@
+@import '~@adjust/adjust-style/scss/themes/adjust-dark/adjust-dark';
+
+@import './scss/variables';
+@import './scss/variables.beta';
+@import './scss/icons';
+@import './scss/breadcrumbs';
+@import './scss/breadcrumbs.beta';
+@import './scss/common';
+@import './scss/common.beta';
+@import './scss/refactored/common';
+@import './scss/form';
+@import './scss/form.beta';
+@import './scss/vendor-override';
+@import './scss/vendor-override.beta';
+@import './scss/error-page';
+@import './scss/error-page.beta';
+@import './scss/tooltip';
+@import './scss/settings.beta';
+
+@import '../../app/**/!(*.beta).scss';

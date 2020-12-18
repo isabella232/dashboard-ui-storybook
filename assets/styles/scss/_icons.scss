@@ -1,0 +1,842 @@
+// ----------------------------------------------------
+// This file was generated do NOT modify it directly!
+// ----------------------------------------------------
+
+@font-face {
+  font-family: "iconfont";
+  src: url('/dashboard-ui/assets/fonts/iconfont/iconfont.d41d8cd98f00b204e980.eot');
+  src: url('/dashboard-ui/assets/fonts/iconfont/iconfont.d41d8cd98f00b204e980.eot#iefix') format('eot'),
+    url('/dashboard-ui/assets/fonts/iconfont/iconfont.d41d8cd98f00b204e980.woff2') format('woff2'),
+    url('/dashboard-ui/assets/fonts/iconfont/iconfont.d41d8cd98f00b204e980.woff') format('woff'),
+    url('/dashboard-ui/assets/fonts/iconfont/iconfont.d41d8cd98f00b204e980.ttf') format('truetype'),
+    url('/dashboard-ui/assets/fonts/iconfont/iconfont.d41d8cd98f00b204e980.svg#iconfont') format('svg');
+}
+
+@mixin icon-styles {
+  font-family: "iconfont" !important;
+  speak: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%icon,
+[class^=icon-] {
+  @include icon-styles;
+}
+
+@function icon-char($name) {
+  $char: "";
+
+  @if $name == access {
+    $char: "\f101";
+  }
+  @if $name == ad-accounts {
+    $char: "\f102";
+  }
+  @if $name == address {
+    $char: "\f103";
+  }
+  @if $name == amazon-store {
+    $char: "\f104";
+  }
+  @if $name == american-express {
+    $char: "\f105";
+  }
+  @if $name == amount {
+    $char: "\f106";
+  }
+  @if $name == android {
+    $char: "\f107";
+  }
+  @if $name == api {
+    $char: "\f108";
+  }
+  @if $name == apps {
+    $char: "\f109";
+  }
+  @if $name == apptrace {
+    $char: "\f10a";
+  }
+  @if $name == arrow-down {
+    $char: "\f10b";
+  }
+  @if $name == arrow-left-alt {
+    $char: "\f10c";
+  }
+  @if $name == arrow-left {
+    $char: "\f10d";
+  }
+  @if $name == arrow-right-alt {
+    $char: "\f10e";
+  }
+  @if $name == arrow-right {
+    $char: "\f10f";
+  }
+  @if $name == arrow-up {
+    $char: "\f110";
+  }
+  @if $name == attributions {
+    $char: "\f111";
+  }
+  @if $name == audience-hollow {
+    $char: "\f112";
+  }
+  @if $name == audience {
+    $char: "\f113";
+  }
+  @if $name == back-arrow {
+    $char: "\f114";
+  }
+  @if $name == bar-chart {
+    $char: "\f115";
+  }
+  @if $name == bug-report {
+    $char: "\f116";
+  }
+  @if $name == checkmark {
+    $char: "\f117";
+  }
+  @if $name == clipboard {
+    $char: "\f118";
+  }
+  @if $name == clock {
+    $char: "\f119";
+  }
+  @if $name == close {
+    $char: "\f11a";
+  }
+  @if $name == cog {
+    $char: "\f11b";
+  }
+  @if $name == column-select {
+    $char: "\f11c";
+  }
+  @if $name == company {
+    $char: "\f11d";
+  }
+  @if $name == control-center {
+    $char: "\f11e";
+  }
+  @if $name == copy {
+    $char: "\f11f";
+  }
+  @if $name == custom-attribution-outline {
+    $char: "\f120";
+  }
+  @if $name == deeplink {
+    $char: "\f121";
+  }
+  @if $name == diners-club {
+    $char: "\f122";
+  }
+  @if $name == discover {
+    $char: "\f123";
+  }
+  @if $name == docs {
+    $char: "\f124";
+  }
+  @if $name == download {
+    $char: "\f125";
+  }
+  @if $name == draggable {
+    $char: "\f126";
+  }
+  @if $name == due-date {
+    $char: "\f127";
+  }
+  @if $name == email {
+    $char: "\f128";
+  }
+  @if $name == equal {
+    $char: "\f129";
+  }
+  @if $name == error-elephant {
+    $char: "\f12a";
+  }
+  @if $name == export {
+    $char: "\f12b";
+  }
+  @if $name == facebook {
+    $char: "\f12c";
+  }
+  @if $name == filter-alt {
+    $char: "\f12d";
+  }
+  @if $name == filter-var {
+    $char: "\f12e";
+  }
+  @if $name == filter {
+    $char: "\f12f";
+  }
+  @if $name == gear-box {
+    $char: "\f130";
+  }
+  @if $name == gear {
+    $char: "\f131";
+  }
+  @if $name == generate-report {
+    $char: "\f132";
+  }
+  @if $name == generic {
+    $char: "\f133";
+  }
+  @if $name == google {
+    $char: "\f134";
+  }
+  @if $name == graph {
+    $char: "\f135";
+  }
+  @if $name == info-round {
+    $char: "\f136";
+  }
+  @if $name == ios {
+    $char: "\f137";
+  }
+  @if $name == ipad {
+    $char: "\f138";
+  }
+  @if $name == iphone {
+    $char: "\f139";
+  }
+  @if $name == italic-link {
+    $char: "\f13a";
+  }
+  @if $name == jcb {
+    $char: "\f13b";
+  }
+  @if $name == language {
+    $char: "\f13c";
+  }
+  @if $name == link-cost-tracker {
+    $char: "\f13d";
+  }
+  @if $name == link {
+    $char: "\f13e";
+  }
+  @if $name == list {
+    $char: "\f13f";
+  }
+  @if $name == logo-txt {
+    $char: "\f140";
+  }
+  @if $name == logo {
+    $char: "\f141";
+  }
+  @if $name == mail {
+    $char: "\f142";
+  }
+  @if $name == mastercard {
+    $char: "\f143";
+  }
+  @if $name == minus-round {
+    $char: "\f144";
+  }
+  @if $name == next-circle {
+    $char: "\f145";
+  }
+  @if $name == notification {
+    $char: "\f146";
+  }
+  @if $name == number {
+    $char: "\f147";
+  }
+  @if $name == ok-round {
+    $char: "\f148";
+  }
+  @if $name == open-link {
+    $char: "\f149";
+  }
+  @if $name == partner-setup {
+    $char: "\f14a";
+  }
+  @if $name == password {
+    $char: "\f14b";
+  }
+  @if $name == pencil {
+    $char: "\f14c";
+  }
+  @if $name == pie-chart {
+    $char: "\f14d";
+  }
+  @if $name == pin {
+    $char: "\f14e";
+  }
+  @if $name == play-store {
+    $char: "\f14f";
+  }
+  @if $name == play {
+    $char: "\f150";
+  }
+  @if $name == plus-alt {
+    $char: "\f151";
+  }
+  @if $name == plus-round {
+    $char: "\f152";
+  }
+  @if $name == plus {
+    $char: "\f153";
+  }
+  @if $name == power {
+    $char: "\f154";
+  }
+  @if $name == preset-add {
+    $char: "\f155";
+  }
+  @if $name == preset-update {
+    $char: "\f156";
+  }
+  @if $name == prev-circle {
+    $char: "\f157";
+  }
+  @if $name == print {
+    $char: "\f158";
+  }
+  @if $name == pushpin {
+    $char: "\f159";
+  }
+  @if $name == radio-checked {
+    $char: "\f15a";
+  }
+  @if $name == radio-unchecked {
+    $char: "\f15b";
+  }
+  @if $name == report {
+    $char: "\f15c";
+  }
+  @if $name == revenue-users {
+    $char: "\f15d";
+  }
+  @if $name == save {
+    $char: "\f15e";
+  }
+  @if $name == search {
+    $char: "\f15f";
+  }
+  @if $name == secrets {
+    $char: "\f160";
+  }
+  @if $name == see {
+    $char: "\f161";
+  }
+  @if $name == segmentation-feature-1 {
+    $char: "\f162";
+  }
+  @if $name == segmentation-feature-2 {
+    $char: "\f163";
+  }
+  @if $name == segmentation-feature-3 {
+    $char: "\f164";
+  }
+  @if $name == settings {
+    $char: "\f165";
+  }
+  @if $name == show {
+    $char: "\f166";
+  }
+  @if $name == spinner1 {
+    $char: "\f167";
+  }
+  @if $name == spinner2 {
+    $char: "\f168";
+  }
+  @if $name == spinner3 {
+    $char: "\f169";
+  }
+  @if $name == spinner4 {
+    $char: "\f16a";
+  }
+  @if $name == star-full {
+    $char: "\f16b";
+  }
+  @if $name == star-half-left {
+    $char: "\f16c";
+  }
+  @if $name == star-half-right {
+    $char: "\f16d";
+  }
+  @if $name == table {
+    $char: "\f16e";
+  }
+  @if $name == tag {
+    $char: "\f16f";
+  }
+  @if $name == tags {
+    $char: "\f170";
+  }
+  @if $name == times {
+    $char: "\f171";
+  }
+  @if $name == timespan {
+    $char: "\f172";
+  }
+  @if $name == trash {
+    $char: "\f173";
+  }
+  @if $name == tree {
+    $char: "\f174";
+  }
+  @if $name == triangle-top {
+    $char: "\f175";
+  }
+  @if $name == twitter {
+    $char: "\f176";
+  }
+  @if $name == two-factor {
+    $char: "\f177";
+  }
+  @if $name == two-gears {
+    $char: "\f178";
+  }
+  @if $name == undo {
+    $char: "\f179";
+  }
+  @if $name == universal {
+    $char: "\f17a";
+  }
+  @if $name == unsee {
+    $char: "\f17b";
+  }
+  @if $name == upload {
+    $char: "\f17c";
+  }
+  @if $name == user-outline {
+    $char: "\f17d";
+  }
+  @if $name == user {
+    $char: "\f17e";
+  }
+  @if $name == users {
+    $char: "\f17f";
+  }
+  @if $name == visa {
+    $char: "\f180";
+  }
+  @if $name == warning {
+    $char: "\f181";
+  }
+  @if $name == web {
+    $char: "\f182";
+  }
+  @if $name == windows-phone {
+    $char: "\f183";
+  }
+  @if $name == windows {
+    $char: "\f184";
+  }
+
+  @return $char;
+}
+
+@mixin icon($name, $insert: before, $extend: true) {
+  &:#{$insert} {
+    @if $extend {
+      @extend %icon;
+    } @else {
+      @include icon-styles;
+    }
+    content: icon-char($name);
+  }
+}
+
+.icon-access {
+  @include icon(access);
+}
+.icon-ad-accounts {
+  @include icon(ad-accounts);
+}
+.icon-address {
+  @include icon(address);
+}
+.icon-amazon-store {
+  @include icon(amazon-store);
+}
+.icon-american-express {
+  @include icon(american-express);
+}
+.icon-amount {
+  @include icon(amount);
+}
+.icon-android {
+  @include icon(android);
+}
+.icon-api {
+  @include icon(api);
+}
+.icon-apps {
+  @include icon(apps);
+}
+.icon-apptrace {
+  @include icon(apptrace);
+}
+.icon-arrow-down {
+  @include icon(arrow-down);
+}
+.icon-arrow-left-alt {
+  @include icon(arrow-left-alt);
+}
+.icon-arrow-left {
+  @include icon(arrow-left);
+}
+.icon-arrow-right-alt {
+  @include icon(arrow-right-alt);
+}
+.icon-arrow-right {
+  @include icon(arrow-right);
+}
+.icon-arrow-up {
+  @include icon(arrow-up);
+}
+.icon-attributions {
+  @include icon(attributions);
+}
+.icon-audience-hollow {
+  @include icon(audience-hollow);
+}
+.icon-audience {
+  @include icon(audience);
+}
+.icon-back-arrow {
+  @include icon(back-arrow);
+}
+.icon-bar-chart {
+  @include icon(bar-chart);
+}
+.icon-bug-report {
+  @include icon(bug-report);
+}
+.icon-checkmark {
+  @include icon(checkmark);
+}
+.icon-clipboard {
+  @include icon(clipboard);
+}
+.icon-clock {
+  @include icon(clock);
+}
+.icon-close {
+  @include icon(close);
+}
+.icon-cog {
+  @include icon(cog);
+}
+.icon-column-select {
+  @include icon(column-select);
+}
+.icon-company {
+  @include icon(company);
+}
+.icon-control-center {
+  @include icon(control-center);
+}
+.icon-copy {
+  @include icon(copy);
+}
+.icon-custom-attribution-outline {
+  @include icon(custom-attribution-outline);
+}
+.icon-deeplink {
+  @include icon(deeplink);
+}
+.icon-diners-club {
+  @include icon(diners-club);
+}
+.icon-discover {
+  @include icon(discover);
+}
+.icon-docs {
+  @include icon(docs);
+}
+.icon-download {
+  @include icon(download);
+}
+.icon-draggable {
+  @include icon(draggable);
+}
+.icon-due-date {
+  @include icon(due-date);
+}
+.icon-email {
+  @include icon(email);
+}
+.icon-equal {
+  @include icon(equal);
+}
+.icon-error-elephant {
+  @include icon(error-elephant);
+}
+.icon-export {
+  @include icon(export);
+}
+.icon-facebook {
+  @include icon(facebook);
+}
+.icon-filter-alt {
+  @include icon(filter-alt);
+}
+.icon-filter-var {
+  @include icon(filter-var);
+}
+.icon-filter {
+  @include icon(filter);
+}
+.icon-gear-box {
+  @include icon(gear-box);
+}
+.icon-gear {
+  @include icon(gear);
+}
+.icon-generate-report {
+  @include icon(generate-report);
+}
+.icon-generic {
+  @include icon(generic);
+}
+.icon-google {
+  @include icon(google);
+}
+.icon-graph {
+  @include icon(graph);
+}
+.icon-info-round {
+  @include icon(info-round);
+}
+.icon-ios {
+  @include icon(ios);
+}
+.icon-ipad {
+  @include icon(ipad);
+}
+.icon-iphone {
+  @include icon(iphone);
+}
+.icon-italic-link {
+  @include icon(italic-link);
+}
+.icon-jcb {
+  @include icon(jcb);
+}
+.icon-language {
+  @include icon(language);
+}
+.icon-link-cost-tracker {
+  @include icon(link-cost-tracker);
+}
+.icon-link {
+  @include icon(link);
+}
+.icon-list {
+  @include icon(list);
+}
+.icon-logo-txt {
+  @include icon(logo-txt);
+}
+.icon-logo {
+  @include icon(logo);
+}
+.icon-mail {
+  @include icon(mail);
+}
+.icon-mastercard {
+  @include icon(mastercard);
+}
+.icon-minus-round {
+  @include icon(minus-round);
+}
+.icon-next-circle {
+  @include icon(next-circle);
+}
+.icon-notification {
+  @include icon(notification);
+}
+.icon-number {
+  @include icon(number);
+}
+.icon-ok-round {
+  @include icon(ok-round);
+}
+.icon-open-link {
+  @include icon(open-link);
+}
+.icon-partner-setup {
+  @include icon(partner-setup);
+}
+.icon-password {
+  @include icon(password);
+}
+.icon-pencil {
+  @include icon(pencil);
+}
+.icon-pie-chart {
+  @include icon(pie-chart);
+}
+.icon-pin {
+  @include icon(pin);
+}
+.icon-play-store {
+  @include icon(play-store);
+}
+.icon-play {
+  @include icon(play);
+}
+.icon-plus-alt {
+  @include icon(plus-alt);
+}
+.icon-plus-round {
+  @include icon(plus-round);
+}
+.icon-plus {
+  @include icon(plus);
+}
+.icon-power {
+  @include icon(power);
+}
+.icon-preset-add {
+  @include icon(preset-add);
+}
+.icon-preset-update {
+  @include icon(preset-update);
+}
+.icon-prev-circle {
+  @include icon(prev-circle);
+}
+.icon-print {
+  @include icon(print);
+}
+.icon-pushpin {
+  @include icon(pushpin);
+}
+.icon-radio-checked {
+  @include icon(radio-checked);
+}
+.icon-radio-unchecked {
+  @include icon(radio-unchecked);
+}
+.icon-report {
+  @include icon(report);
+}
+.icon-revenue-users {
+  @include icon(revenue-users);
+}
+.icon-save {
+  @include icon(save);
+}
+.icon-search {
+  @include icon(search);
+}
+.icon-secrets {
+  @include icon(secrets);
+}
+.icon-see {
+  @include icon(see);
+}
+.icon-segmentation-feature-1 {
+  @include icon(segmentation-feature-1);
+}
+.icon-segmentation-feature-2 {
+  @include icon(segmentation-feature-2);
+}
+.icon-segmentation-feature-3 {
+  @include icon(segmentation-feature-3);
+}
+.icon-settings {
+  @include icon(settings);
+}
+.icon-show {
+  @include icon(show);
+}
+.icon-spinner1 {
+  @include icon(spinner1);
+}
+.icon-spinner2 {
+  @include icon(spinner2);
+}
+.icon-spinner3 {
+  @include icon(spinner3);
+}
+.icon-spinner4 {
+  @include icon(spinner4);
+}
+.icon-star-full {
+  @include icon(star-full);
+}
+.icon-star-half-left {
+  @include icon(star-half-left);
+}
+.icon-star-half-right {
+  @include icon(star-half-right);
+}
+.icon-table {
+  @include icon(table);
+}
+.icon-tag {
+  @include icon(tag);
+}
+.icon-tags {
+  @include icon(tags);
+}
+.icon-times {
+  @include icon(times);
+}
+.icon-timespan {
+  @include icon(timespan);
+}
+.icon-trash {
+  @include icon(trash);
+}
+.icon-tree {
+  @include icon(tree);
+}
+.icon-triangle-top {
+  @include icon(triangle-top);
+}
+.icon-twitter {
+  @include icon(twitter);
+}
+.icon-two-factor {
+  @include icon(two-factor);
+}
+.icon-two-gears {
+  @include icon(two-gears);
+}
+.icon-undo {
+  @include icon(undo);
+}
+.icon-universal {
+  @include icon(universal);
+}
+.icon-unsee {
+  @include icon(unsee);
+}
+.icon-upload {
+  @include icon(upload);
+}
+.icon-user-outline {
+  @include icon(user-outline);
+}
+.icon-user {
+  @include icon(user);
+}
+.icon-users {
+  @include icon(users);
+}
+.icon-visa {
+  @include icon(visa);
+}
+.icon-warning {
+  @include icon(warning);
+}
+.icon-web {
+  @include icon(web);
+}
+.icon-windows-phone {
+  @include icon(windows-phone);
+}
+.icon-windows {
+  @include icon(windows);
+}
