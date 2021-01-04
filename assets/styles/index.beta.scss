@@ -18,3 +18,4 @@
 @import './scss/settings.beta';
 
 @import '../../app/**/!(*.beta).scss';
+@import '../../../node_modules/@adjust/dashboard-core/src/app/components/**/!(*.beta).scss';
