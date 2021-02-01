@@ -653,6 +653,9 @@
         color: $font-color-beta-light;
         margin: 0 0 4px;
       }
+      ul + h4 {
+        margin-top: 7px;
+      }
 
       li {
         padding: 4px 0;
