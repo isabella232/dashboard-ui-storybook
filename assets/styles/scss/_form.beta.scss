@@ -158,18 +158,3 @@
     }
   }
 }
-
-.form-credit-card-icon {
-  .braintree-hosted-fields-focused + .icon {
-    color: $sidebar-color;
-  }
-  .icon {
-    font-size: 1.5em;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 3px;
-    height: 30px;
-    color: $font-color-beta-light
-  }
-}

@@ -76,12 +76,6 @@ PERFORMANCE OF THIS SOFTWARE.
 /*! @license DOMPurify | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.2.2/LICENSE */
 
 /**
- * @license AngularJS v1.5.11
- * (c) 2010-2017 Google, Inc. http://angularjs.org
- * License: MIT
- */
-
-/**
 * @license nested-property https://github.com/cosmosio/nested-property
 *
 * The MIT License (MIT)

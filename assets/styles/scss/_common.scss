@@ -1019,3 +1019,38 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+/* Sub actions styles
+================================================== */
+
+.sub-actions {
+  padding: 10px 0;
+  @include clearfix;
+
+  > a {
+    color: $font-color-beta-light;
+    text-transform: uppercase;
+    padding: 8px 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    float: left;
+
+    i {
+      display: inline-block;
+      margin-right: 6px;
+      font-size: 16px;
+      vertical-align: bottom;
+    }
+
+    &:hover {
+      color: $font-color-dark;
+      cursor: pointer;
+    }
+
+    &.disabled {
+      opacity: 0.3;
+      color: $font-color-dark;
+      cursor: default;
+    }
+  }
+}
