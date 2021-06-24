@@ -39,7 +39,10 @@ $pickdate-disabled-color: #7b86a5;
     width: 34px;
     position: relative;
 
-    &, &:hover, &:active, &:focus {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
       color: rgba(white, 0);
     }
 
@@ -136,7 +139,7 @@ $pickdate-disabled-color: #7b86a5;
     color: white;
 
     &:before {
-      background: rgba(#5e6b8b, .5);
+      background: rgba(#5e6b8b, 0.5);
     }
   }
 

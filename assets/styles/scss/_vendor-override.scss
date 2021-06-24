@@ -21,7 +21,9 @@
   .pickadate-prev,
   .pickadate-next {
     color: #fff;
-    &:active, &:visited, &:focus {
+    &:active,
+    &:visited,
+    &:focus {
       color: #fff;
     }
 
@@ -44,7 +46,6 @@
 }
 
 .pickadate-cell {
-
   li {
     border: none !important;
     padding: 5px 0;
@@ -54,7 +55,7 @@
     &:hover {
       color: $color-main !important;
       &.pickadate-disabled {
-        color: #DCDCDC !important;
+        color: #dcdcdc !important;
       }
       &.pickadate-active {
         color: #fff !important;

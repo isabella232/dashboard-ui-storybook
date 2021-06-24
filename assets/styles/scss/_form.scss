@@ -50,12 +50,14 @@
       }
     }
 
-    .iconic-label, i {
+    .iconic-label,
+    i {
       line-height: $size + 5px;
     }
   }
 
-  .iconic-label, i {
+  .iconic-label,
+  i {
     line-height: $size;
     margin: 0;
   }
@@ -111,8 +113,8 @@ button:focus {
     vertical-align: middle;
   }
 
-  input[type=checkbox],
-  input[type=radio] {
+  input[type='checkbox'],
+  input[type='radio'] {
     position: absolute;
     height: 0;
     width: 0;
@@ -121,23 +123,29 @@ button:focus {
     opacity: 0;
     cursor: pointer;
 
-    &:disabled + i, &:disabled + i + span {
+    &:disabled + i,
+    &:disabled + i + span {
       color: $font-color-pale;
     }
 
-    &:focus + i, &:focus + i + span {
+    &:focus + i,
+    &:focus + i + span {
       color: $color-main;
     }
   }
 
-  .error, .error.active {
-    i, span {
+  .error,
+  .error.active {
+    i,
+    span {
       color: $color-error;
     }
-    input[type=checkbox],
-    input[type=radio] {
-      &:disabled + i, &:disabled + i + span,
-      &:focus + i, &:focus + i + span {
+    input[type='checkbox'],
+    input[type='radio'] {
+      &:disabled + i,
+      &:disabled + i + span,
+      &:focus + i,
+      &:focus + i + span {
         color: $color-error;
       }
     }
@@ -151,9 +159,10 @@ button:focus {
       display: block;
       color: $color-main;
     }
-    input[type=checkbox],
-    input[type=radio] {
-      &:disabled + i, &:disabled + i + span {
+    input[type='checkbox'],
+    input[type='radio'] {
+      &:disabled + i,
+      &:disabled + i + span {
         color: $color-main;
       }
     }

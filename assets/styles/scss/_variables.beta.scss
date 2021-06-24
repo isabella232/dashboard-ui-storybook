@@ -1,19 +1,18 @@
-$font-color-dark: #4B577E;
+$font-color-dark: #4b577e;
 $font-color-beta-light: #96a1bd;
 $font-color-beta-dark: #c9d4f0;
-$font-color-grey: #E4E7ED;
-$font-warning: #EAC029;
+$font-color-grey: #e4e7ed;
+$font-warning: #eac029;
 $notification-warning: #f6bb40;
 
-
-$sidebar-light-color: #E4E7ED;
-$sidebar-color: #4B577E;
+$sidebar-light-color: #e4e7ed;
+$sidebar-color: #4b577e;
 $sidebar-highlight-color: #445076;
 $sidebar-hover-color: #5d6a8c;
-$sidebar-dark-bg: #3E496F;
+$sidebar-dark-bg: #3e496f;
 
 $sidebar-width-medium: 450px;
-$sidebar-tab-inactive: #5E6A8E;
+$sidebar-tab-inactive: #5e6a8e;
 
 $navbar-menu-item-height: 40px;
 
@@ -42,15 +41,15 @@ $segmentation-group-4: #b0d591;
 $skeleton-color: $sidebar-color;
 
 // Animations
-$deceleration-curve-timing: cubic-bezier(0, 0, .2, 1);
+$deceleration-curve-timing: cubic-bezier(0, 0, 0.2, 1);
 
 // User Guide
-$guide-font-color: #434F7A;
-$guide-font-color-icon: #7882AD;
-$guide-bg-color: #D0D7ED;
-$guide-bg-color-disabled: #6B7A9E;
-$guide-bg-color-btn: #E9EEFC;
-$guide-bg-color-btn-accent: #F7F8FF;
+$guide-font-color: #434f7a;
+$guide-font-color-icon: #7882ad;
+$guide-bg-color: #d0d7ed;
+$guide-bg-color-disabled: #6b7a9e;
+$guide-bg-color-btn: #e9eefc;
+$guide-bg-color-btn-accent: #f7f8ff;
 
-$warning-bg-color: #FBEAAD;
-$warning-font-color: #5D4F39;
+$warning-bg-color: #fbeaad;
+$warning-font-color: #5d4f39;

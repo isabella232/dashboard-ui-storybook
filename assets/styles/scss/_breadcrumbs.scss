@@ -28,7 +28,7 @@ $size-mobile: 28px;
       position: relative;
       width: $size;
       height: 100%;
-      background-color: #EEEFF3;
+      background-color: #eeeff3;
       overflow: hidden;
       @include icon(arrow-left);
 
@@ -41,7 +41,7 @@ $size-mobile: 28px;
         height: $navbar-height;
         line-height: $navbar-height;
         width: $size;
-        background-color: #97A4B7;
+        background-color: #97a4b7;
         position: absolute;
         top: 0;
         right: 0;
@@ -65,7 +65,7 @@ $size-mobile: 28px;
       &.empty {
         &:before {
           content: '';
-          background-color: #97A4B7;
+          background-color: #97a4b7;
         }
         &:hover {
           a {

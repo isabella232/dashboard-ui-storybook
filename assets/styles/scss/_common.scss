@@ -52,7 +52,9 @@
   background-color: #fff;
   margin: ($cell-height + 1) 0 ($cell-height + 10px);
 
-  .th, .td, .tf {
+  .th,
+  .td,
+  .tf {
     height: $cell-height;
     width: $cell-width;
     font-weight: normal;
@@ -62,7 +64,8 @@
     letter-spacing: -0.04em;
     vertical-align: middle;
     line-height: 1em;
-    & > a, .td-label {
+    & > a,
+    .td-label {
       @extend %ellipsis;
       display: block;
     }
@@ -99,7 +102,7 @@
 
     &.color-0 {
       background: $td-color-0;
-      color: rgba($mediumblue,0.5);
+      color: rgba($mediumblue, 0.5);
     }
     &.color-1 {
       background: $td-color-1;
@@ -134,7 +137,8 @@
     background-color: $logo;
   }
 
-  .td, .tf {
+  .td,
+  .tf {
     border-right: 1px solid $light-border-color;
     font-size: 0.8em;
   }
@@ -161,18 +165,22 @@
     float: left;
     min-width: $stick-width;
 
-    .th, .td, .tf {
+    .th,
+    .td,
+    .tf {
       text-align: left;
       width: $stick-width;
     }
     .td {
       background-color: #fff;
       padding: 0;
-      & > a, .td-label {
+      & > a,
+      .td-label {
         padding: 15px 10px;
       }
       &-with-icon {
-        & > a, .td-label {
+        & > a,
+        .td-label {
           padding: 7px 10px;
         }
       }
@@ -187,7 +195,8 @@
         text-transform: lowercase;
       }
     }
-    .t-head, .t-foot {
+    .t-head,
+    .t-foot {
       z-index: 2;
       left: 0;
     }
@@ -203,7 +212,8 @@
     font-size: 0.9em;
     @include scroll-bar(0px, 0px);
 
-    .td, .tf {
+    .td,
+    .tf {
       font-family: 'Droid Sans Mono', Sans, sans-serif;
 
       &.color-0 {
@@ -214,7 +224,8 @@
     .tr {
       width: 100%;
     }
-    .t-head, .t-foot {
+    .t-head,
+    .t-foot {
       z-index: 0;
       left: $stick-width;
     }
@@ -234,7 +245,8 @@
     }
   }
 
-  .t-head, .t-foot {
+  .t-head,
+  .t-foot {
     position: absolute;
     z-index: 1;
   }
@@ -254,7 +266,8 @@
       width: 100%;
       background-color: #fff;
       border-bottom: 1px solid $dark-border-color;
-      .th, .td {
+      .th,
+      .td {
         text-align: center;
         background-color: #fff;
         width: 15%;
@@ -267,7 +280,7 @@
       }
 
       .td:not(.no-droid) {
-        font-family: "Droid Sans Mono", monospace;
+        font-family: 'Droid Sans Mono', monospace;
         font-size: 12px;
       }
 
@@ -278,7 +291,8 @@
 
     @media screen and (max-width: $width-tobile) {
       .tr {
-        .th, .td {
+        .th,
+        .td {
           width: 40%;
           &:first-child {
             width: 60%;
@@ -290,34 +304,41 @@
 
   &-apps {
     .s-column {
-      .th, .td, .tf {
+      .th,
+      .td,
+      .tf {
         width: $stick-width-wider;
       }
     }
     .s-values {
       margin-left: $stick-width-wider;
-      .t-head, .t-foot {
+      .t-head,
+      .t-foot {
         left: $stick-width-wider;
       }
     }
   }
 
   @media screen and (max-width: $width-tobile) {
-
-    .th, .td, .tf {
+    .th,
+    .td,
+    .tf {
       width: $cell-width-mobile;
     }
 
     &,
     &-apps {
       .s-column {
-        .th, .td, .tf {
+        .th,
+        .td,
+        .tf {
           width: $stick-width-mobile;
         }
       }
       .s-values {
         margin-left: $stick-width-mobile;
-        .t-head, .t-foot {
+        .t-head,
+        .t-foot {
           left: $stick-width-mobile;
         }
       }
@@ -365,7 +386,7 @@
     height: 100%;
 
     &-dark {
-      background-color: rgba(45,79,99, 0.4);
+      background-color: rgba(45, 79, 99, 0.4);
       @include transition(opacity 0.1s ease, right $speed ease);
     }
   }
@@ -748,7 +769,7 @@
   font-style: normal;
   font-size: 0.7em;
   padding: 4px 0px;
-  background-color: #96A4B6;
+  background-color: #96a4b6;
   color: #fff;
   text-transform: uppercase;
   width: 80px;
@@ -861,7 +882,6 @@
     }
   }
 }
-
 
 /* Terms of service box (used in change pricing, snapchat, add twitter handle)
 ================================================== */

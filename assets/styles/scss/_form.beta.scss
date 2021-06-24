@@ -9,13 +9,14 @@
     margin-right: 0;
   }
 
-  i, .iconic-label {
+  i,
+  .iconic-label {
     line-height: 30px;
   }
 
   i {
     width: 26px;
-    @include transition(color .2s ease)
+    @include transition(color 0.2s ease);
   }
 
   .iconic-label {
@@ -31,7 +32,8 @@
     min-width: 50px;
     margin-right: 0;
 
-    i, .iconic-label {
+    i,
+    .iconic-label {
       line-height: 40px;
     }
 
@@ -67,7 +69,7 @@
     }
   }
 
-  & [class*=icon-] {
+  & [class*='icon-'] {
     font-size: 24px;
   }
 
@@ -92,30 +94,37 @@
     }
   }
 
-  i, span {
+  i,
+  span {
     color: $btn-color-bg;
   }
 
-  input[type=checkbox],
-  input[type=radio] {
-    &:disabled + i, &:disabled + i + span {
+  input[type='checkbox'],
+  input[type='radio'] {
+    &:disabled + i,
+    &:disabled + i + span {
       color: $sidebar-tab-inactive;
       cursor: not-allowed;
     }
 
-    &:focus + i, &:focus + i + span {
+    &:focus + i,
+    &:focus + i + span {
       color: white;
     }
   }
 
-  .error, .error.active {
-    i, span {
+  .error,
+  .error.active {
+    i,
+    span {
       color: $font-warning;
     }
-    input[type=checkbox],
-    input[type=radio] {
-      &:disabled + i, &:disabled + i + span,
-      &:focus + i, &:focus + i + span {
+    input[type='checkbox'],
+    input[type='radio'] {
+      &:disabled + i,
+      &:disabled + i + span,
+      &:focus + i,
+      &:focus + i + span {
         color: $font-warning;
       }
     }
@@ -128,16 +137,16 @@
     span {
       color: white;
     }
-    input[type=checkbox],
-    input[type=radio] {
-      &:disabled + i, &:disabled + i + span {
+    input[type='checkbox'],
+    input[type='radio'] {
+      &:disabled + i,
+      &:disabled + i + span {
         color: white;
       }
     }
   }
 
   &.text-selection-group {
-
     &-tabs {
       @include box-shadow(none);
       padding-left: 0;

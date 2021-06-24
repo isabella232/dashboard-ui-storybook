@@ -24,7 +24,8 @@
     }
   }
 
-  a, .custom-select-selected-val {
+  a,
+  .custom-select-selected-val {
     color: $font-color-beta-light;
   }
 }
@@ -103,7 +104,8 @@
     .th {
       position: relative;
     }
-    .td, .tf {
+    .td,
+    .tf {
       font-size: 11px;
     }
   }
@@ -129,7 +131,8 @@
     height: $cell-height + $cell-gap;
   }
 
-  .td, .tf {
+  .td,
+  .tf {
     border-right: $cell-gap solid $color-bg;
     border-bottom: $cell-gap solid $color-bg;
   }
@@ -138,7 +141,8 @@
     .tr {
       border-bottom: 0;
     }
-    .td, .tf {
+    .td,
+    .tf {
       background-color: $dark-cell-color-beta;
     }
   }
@@ -162,7 +166,8 @@
       .td:first-child {
         background-color: $dark-cell-color-beta;
       }
-      .td, .th {
+      .td,
+      .th {
         text-align: right;
         &:first-child {
           width: calc(25% - 20px);
@@ -177,7 +182,8 @@
         background-color: $dark-light-cell-color;
       }
     }
-    .td, .th {
+    .td,
+    .th {
       float: left;
     }
     .th-search .sort-handle {
@@ -271,7 +277,8 @@
       }
     }
 
-    .t-head > .tr, .t-foot {
+    .t-head > .tr,
+    .t-foot {
       background-attachment: local;
       background-size: #{$cell-width * 2} 100%;
       @include linear-gradient(90deg, $dark-light-cell-color 50%, $dark-cell-color-beta 50%);
@@ -416,7 +423,7 @@
     }
   }
 
-  [class*=icon-]:before {
+  [class*='icon-']:before {
     display: inline-block;
   }
 
@@ -545,18 +552,18 @@
   .confirm-remove {
     z-index: $z-top-tile + 2;
     background: $btn-color-destroy;
-    @include transition(all .3s ease 0s);
+    @include transition(all 0.3s ease 0s);
 
     &.open {
       height: 100%;
       opacity: 1;
-      @include transition(all .3s ease 0s);
+      @include transition(all 0.3s ease 0s);
 
       .confirm-remove-content {
         pointer-events: auto;
         opacity: 1;
         top: 50%;
-        @include transition(all .15s ease .3s);
+        @include transition(all 0.15s ease 0.3s);
       }
     }
 
@@ -564,14 +571,14 @@
       .confirm-remove-loading {
         opacity: 1;
         top: 50%;
-        @include transition(all .15s ease .3s);
+        @include transition(all 0.15s ease 0.3s);
       }
 
       .confirm-remove-content {
         pointer-events: none;
         opacity: 0;
         top: 60%;
-        @include transition(all .15s ease .3s);
+        @include transition(all 0.15s ease 0.3s);
       }
     }
 
@@ -581,7 +588,7 @@
       top: 65%;
       left: 50%;
       margin: -20px 0 0 -20px;
-      @include transition(all .3s ease 0s);
+      @include transition(all 0.3s ease 0s);
 
       &::after {
         border-color: #f7aaaa;
@@ -602,7 +609,7 @@
       text-align: center;
       font-size: 1em;
       text-transform: uppercase;
-      @include transition(all .3s ease 0s);
+      @include transition(all 0.3s ease 0s);
     }
 
     &-buttons {
@@ -617,8 +624,8 @@
         font-size: 1.1em;
         text-align: center;
         color: white;
-        @include transition(all .2s ease 0s);
-        opacity: .5;
+        @include transition(all 0.2s ease 0s);
+        opacity: 0.5;
         cursor: pointer;
 
         &:hover {
@@ -632,7 +639,7 @@
     z-index: $z-top-tile + 1;
     background: $sidebar-color;
     text-align: left;
-    @include transition(all .3s ease 0s);
+    @include transition(all 0.3s ease 0s);
 
     h4 {
       font-size: 13px;
@@ -643,7 +650,7 @@
     .actions-list-inside {
       opacity: 0;
       padding: 15px 0 0 15px;
-      @include transition(all .3s ease 0);
+      @include transition(all 0.3s ease 0);
     }
 
     .actions-list-section {
@@ -686,12 +693,12 @@
     &.open {
       height: 100%;
       opacity: 1;
-      @include transition(all .3s ease 0s);
+      @include transition(all 0.3s ease 0s);
 
       .actions-list-inside {
         opacity: 1;
         padding-top: 0;
-        @include transition(all .15s ease .15s);
+        @include transition(all 0.15s ease 0.15s);
       }
     }
 
@@ -719,7 +726,7 @@
     text-align: center;
     position: relative;
     z-index: $z-top-tile + 2;
-    @include transition(all .2s ease);
+    @include transition(all 0.2s ease);
 
     i {
       display: inline-block;
