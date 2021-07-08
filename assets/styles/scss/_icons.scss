@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "iconfont";
-  src: url('/assets/fonts/iconfont/iconfont.2832a1d73dc897121783.eot');
-  src: url('/assets/fonts/iconfont/iconfont.2832a1d73dc897121783.eot#iefix') format('eot'),
-    url('/assets/fonts/iconfont/iconfont.2832a1d73dc897121783.woff2') format('woff2'),
-    url('/assets/fonts/iconfont/iconfont.2832a1d73dc897121783.woff') format('woff'),
-    url('/assets/fonts/iconfont/iconfont.2832a1d73dc897121783.ttf') format('truetype'),
-    url('/assets/fonts/iconfont/iconfont.2832a1d73dc897121783.svg#iconfont') format('svg');
+  src: url('/assets/fonts/iconfont/iconfont.aabe5716a654c95ccc8d.eot');
+  src: url('/assets/fonts/iconfont/iconfont.aabe5716a654c95ccc8d.eot#iefix') format('eot'),
+    url('/assets/fonts/iconfont/iconfont.aabe5716a654c95ccc8d.woff2') format('woff2'),
+    url('/assets/fonts/iconfont/iconfont.aabe5716a654c95ccc8d.woff') format('woff'),
+    url('/assets/fonts/iconfont/iconfont.aabe5716a654c95ccc8d.ttf') format('truetype'),
+    url('/assets/fonts/iconfont/iconfont.aabe5716a654c95ccc8d.svg#iconfont') format('svg');
 }
 
 @mixin icon-styles {
@@ -225,212 +225,206 @@
   @if $name == list {
     $char: "\f140";
   }
-  @if $name == logo-txt {
+  @if $name == mail {
     $char: "\f141";
   }
-  @if $name == logo {
+  @if $name == mastercard {
     $char: "\f142";
   }
-  @if $name == mail {
+  @if $name == minus-round {
     $char: "\f143";
   }
-  @if $name == mastercard {
+  @if $name == next-circle {
     $char: "\f144";
   }
-  @if $name == minus-round {
+  @if $name == notification {
     $char: "\f145";
   }
-  @if $name == next-circle {
+  @if $name == number {
     $char: "\f146";
   }
-  @if $name == notification {
+  @if $name == ok-round {
     $char: "\f147";
   }
-  @if $name == number {
+  @if $name == open-link {
     $char: "\f148";
   }
-  @if $name == ok-round {
+  @if $name == partner-setup {
     $char: "\f149";
   }
-  @if $name == open-link {
+  @if $name == password {
     $char: "\f14a";
   }
-  @if $name == partner-setup {
+  @if $name == pencil {
     $char: "\f14b";
   }
-  @if $name == password {
+  @if $name == pie-chart {
     $char: "\f14c";
   }
-  @if $name == pencil {
+  @if $name == pin {
     $char: "\f14d";
   }
-  @if $name == pie-chart {
+  @if $name == play-store {
     $char: "\f14e";
   }
-  @if $name == pin {
+  @if $name == play {
     $char: "\f14f";
   }
-  @if $name == play-store {
+  @if $name == plus-alt {
     $char: "\f150";
   }
-  @if $name == play {
+  @if $name == plus-round {
     $char: "\f151";
   }
-  @if $name == plus-alt {
+  @if $name == plus {
     $char: "\f152";
   }
-  @if $name == plus-round {
+  @if $name == power {
     $char: "\f153";
   }
-  @if $name == plus {
+  @if $name == preset-add {
     $char: "\f154";
   }
-  @if $name == power {
+  @if $name == preset-update {
     $char: "\f155";
   }
-  @if $name == preset-add {
+  @if $name == prev-circle {
     $char: "\f156";
   }
-  @if $name == preset-update {
+  @if $name == print {
     $char: "\f157";
   }
-  @if $name == prev-circle {
+  @if $name == pushpin {
     $char: "\f158";
   }
-  @if $name == print {
+  @if $name == radio-checked {
     $char: "\f159";
   }
-  @if $name == pushpin {
+  @if $name == radio-unchecked {
     $char: "\f15a";
   }
-  @if $name == radio-checked {
+  @if $name == report {
     $char: "\f15b";
   }
-  @if $name == radio-unchecked {
+  @if $name == revenue-users {
     $char: "\f15c";
   }
-  @if $name == report {
+  @if $name == save {
     $char: "\f15d";
   }
-  @if $name == revenue-users {
+  @if $name == search {
     $char: "\f15e";
   }
-  @if $name == save {
+  @if $name == secrets {
     $char: "\f15f";
   }
-  @if $name == search {
+  @if $name == see {
     $char: "\f160";
   }
-  @if $name == secrets {
+  @if $name == segmentation-feature-1 {
     $char: "\f161";
   }
-  @if $name == see {
+  @if $name == segmentation-feature-2 {
     $char: "\f162";
   }
-  @if $name == segmentation-feature-1 {
+  @if $name == segmentation-feature-3 {
     $char: "\f163";
   }
-  @if $name == segmentation-feature-2 {
+  @if $name == settings {
     $char: "\f164";
   }
-  @if $name == segmentation-feature-3 {
+  @if $name == show {
     $char: "\f165";
   }
-  @if $name == settings {
+  @if $name == spinner1 {
     $char: "\f166";
   }
-  @if $name == show {
+  @if $name == spinner2 {
     $char: "\f167";
   }
-  @if $name == spinner1 {
+  @if $name == spinner3 {
     $char: "\f168";
   }
-  @if $name == spinner2 {
+  @if $name == spinner4 {
     $char: "\f169";
   }
-  @if $name == spinner3 {
+  @if $name == star-full {
     $char: "\f16a";
   }
-  @if $name == spinner4 {
+  @if $name == star-half-left {
     $char: "\f16b";
   }
-  @if $name == star-full {
+  @if $name == star-half-right {
     $char: "\f16c";
   }
-  @if $name == star-half-left {
+  @if $name == table {
     $char: "\f16d";
   }
-  @if $name == star-half-right {
+  @if $name == tag {
     $char: "\f16e";
   }
-  @if $name == table {
+  @if $name == tags {
     $char: "\f16f";
   }
-  @if $name == tag {
+  @if $name == times {
     $char: "\f170";
   }
-  @if $name == tags {
+  @if $name == timespan {
     $char: "\f171";
   }
-  @if $name == times {
+  @if $name == trash {
     $char: "\f172";
   }
-  @if $name == timespan {
+  @if $name == tree {
     $char: "\f173";
   }
-  @if $name == trash {
+  @if $name == triangle-top {
     $char: "\f174";
   }
-  @if $name == tree {
+  @if $name == twitter {
     $char: "\f175";
   }
-  @if $name == triangle-top {
+  @if $name == two-factor {
     $char: "\f176";
   }
-  @if $name == twitter {
+  @if $name == two-gears {
     $char: "\f177";
   }
-  @if $name == two-factor {
+  @if $name == undo {
     $char: "\f178";
   }
-  @if $name == two-gears {
+  @if $name == universal {
     $char: "\f179";
   }
-  @if $name == undo {
+  @if $name == unsee {
     $char: "\f17a";
   }
-  @if $name == universal {
+  @if $name == upload {
     $char: "\f17b";
   }
-  @if $name == unsee {
+  @if $name == user-outline {
     $char: "\f17c";
   }
-  @if $name == upload {
+  @if $name == user {
     $char: "\f17d";
   }
-  @if $name == user-outline {
+  @if $name == users {
     $char: "\f17e";
   }
-  @if $name == user {
+  @if $name == visa {
     $char: "\f17f";
   }
-  @if $name == users {
+  @if $name == warning {
     $char: "\f180";
   }
-  @if $name == visa {
+  @if $name == web {
     $char: "\f181";
   }
-  @if $name == warning {
+  @if $name == windows-phone {
     $char: "\f182";
   }
-  @if $name == web {
-    $char: "\f183";
-  }
-  @if $name == windows-phone {
-    $char: "\f184";
-  }
   @if $name == windows {
-    $char: "\f185";
+    $char: "\f183";
   }
 
   @return $char;
@@ -638,12 +632,6 @@
 }
 .icon-list {
   @include icon(list);
-}
-.icon-logo-txt {
-  @include icon(logo-txt);
-}
-.icon-logo {
-  @include icon(logo);
 }
 .icon-mail {
   @include icon(mail);
